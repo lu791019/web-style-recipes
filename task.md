@@ -2,14 +2,14 @@
 
 ## 0. 準備
 - [x] 建 repo、implementation_plan.md、task.md（2026-10-18，Dex 確認位置／名稱／範圍）
-- [ ] 載入 agentskill-expertise skill 當設計依據；WebFetch 乾淨網址重讀原文（不得寫入 token）
+- [ ] 載入 agentskill-expertise skill 當設計依據（已讀 SKILL.md）；WebFetch 乾淨網址重讀原文（未做：本輪用 Dex 提供的改寫素材；不得寫入 token）
 
 ## 1. 撰寫
-- [ ] references/method.md（五段式方法＋brief 卡模板）
-- [ ] references/pitfalls.md
-- [ ] references/styles/ 10 檔（自寫，不照抄；檔頭出處）
-- [ ] SKILL.md（description 情境導向、風格索引表、分工、更新時機；< 5k tokens）
-- [ ] 自查：grep 原文長句確認沒有照抄；grep 確認沒有 mcp_token
+- [x] references/method.md（五段式方法＋brief 卡模板）
+- [x] references/pitfalls.md
+- [x] references/styles/ 10 檔（自寫，不照抄；檔頭出處）
+- [x] SKILL.md（description 情境導向、風格索引表、分工、更新時機；< 5k tokens）
+- [ ] 自查：grep 原文長句確認沒有照抄（未做，需讀原文）；grep 確認沒有 mcp_token（已通過）
 
 ## 2. 接線
 - [ ] `ln -s ~/web-style-recipes ~/.claude/skills/web-style-recipes`；新 session 確認出現在 skill 清單
