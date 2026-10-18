@@ -9,7 +9,7 @@
 - [x] references/pitfalls.md
 - [x] references/styles/ 10 檔（自寫，不照抄；檔頭出處）
 - [x] SKILL.md（description 情境導向、風格索引表、分工、更新時機；< 5k tokens）
-- [ ] 自查：grep 原文長句確認沒有照抄（未做，需讀原文）；grep 確認沒有 mcp_token（已通過）
+- [x] 自查：抓原文頁面純文字，與所有檔案比對 14 字以上共同片段，只有出處標題與技術名詞，無照抄長句；無 token 值
 
 ## 2. 接線
 - [x] symlink 建好；新 session 的 skill 清單出現 web-style-recipes
@@ -23,4 +23,4 @@
 
 ## 4. 收尾
 - [ ] commit；回報 Dex（截圖、觸發結果、修了什麼）
-- [ ] 問 Dex 是否推到私有 GitHub repo
+- [x] Dex 10/18 同意推到私有 GitHub repo `lu791019/web-style-recipes`
