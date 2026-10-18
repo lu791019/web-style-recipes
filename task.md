@@ -16,6 +16,7 @@
 
 ## 3. 實測
 - [ ] 新 session 不點名觸發 → skill 自動載入
+- [ ] `/web-style-recipes` 無參數 → 出現選單；`/web-style-recipes 熱感應` → 直接開工；加「只要 brief」→ 只出 brief 卡
 - [ ] 熱感應、白板便利貼兩個 HTML；npx serve；1440／390 截圖；減少動態效果；白板 localStorage
 - [ ] 依結果修 skill
 

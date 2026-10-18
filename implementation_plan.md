@@ -29,6 +29,16 @@
 - 主體放原則（五段式方法、一次改一件事、可讀性與減少動態優先），細節放 references，按需讀。
 - 與現有 skill 分工寫明：本 skill 管「風格配方」；設計原則與評審交 impeccable／frontend-design；設計 token 交 design-system。
 
+## 三種用法（Dex 2026-10-18 要求「一鍵選擇」）
+| 用法 | 觸發 | 行為 |
+|---|---|---|
+| 自動載入 | 自然語言提到實驗型首頁或任一風格 | 載入對應風格檔後開工 |
+| 一鍵選擇 | `/web-style-recipes`（無參數） | 用 AskUserQuestion 列出風格選單（每個附一句說明＋適合用途；超過 4 個時先選分類再選風格），選定後只問內容（品牌名、要放的素材），照配方產出單一 HTML |
+| 直接指定 | `/web-style-recipes 熱感應`（參數＝風格名或編號） | 跳過選單直接開工 |
+- 任一用法都可加「只要 brief」→ 只產出 Claude Design brief 卡，不寫程式。
+- 「新增風格」：使用者丟來新風格的參考（文章、截圖、描述）→ 照五段格式寫成 `references/styles/NN-*.md`，並更新 SKILL.md 索引表；選單從索引表產生，不寫死。
+- 不做成 10 個獨立指令：環境已有 300+ skill，多 10 筆常駐描述會增加選錯機率；一個 skill＋選單只常駐一筆。
+
 ## 與 Claude Design 協作
 1. Claude Code 依本 skill 選風格、填入內容 → 產出 brief 卡（風格檔最後一節的模板）。
 2. Dex 把 brief 卡貼進 Claude Design 做視覺探索、定方向。
