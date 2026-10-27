@@ -1,6 +1,6 @@
 ---
 name: web-style-recipes
-description: 實驗型互動首頁的風格配方庫（10 種）。使用時機：要做實驗型或互動式首頁、作品集或活動頁想要有記憶點、不想要罐頭模板感時；提到任一風格——復古自拍亭／拍貼機、熱像／熱感應、音檔可視化／聲紋／頻譜、白板便利貼、監視器／CCTV／監控畫面、萬花筒、郵票、動態文字／文字粒子、像素房間／像素風遊戲首頁、重力感應／物理引力；或要先產出給 Claude Design 的視覺 brief 時。主動更新時機：新增風格時加 references/styles/NN-*.md 並更新索引表；實測撞到新陷阱時補進該風格檔或 references/pitfalls.md。
+description: 實驗型互動首頁的風格配方庫（11 種）＋ 20 種有出處的美學風格庫（瑞士、包浩斯、孟菲斯、Riso、普普、合成波、蒸氣波、Y2K 鉻、黏土、毛玻璃、新粗獷、像素、等距、低多邊形、線條畫等）。使用時機：要做實驗型或互動式首頁、作品集或活動頁想要有記憶點、不想要罐頭模板感時；提到任一風格——復古自拍亭／拍貼機、熱像／熱感應、音檔可視化／聲紋／頻譜、白板便利貼、監視器／CCTV／監控畫面、萬花筒、郵票、動態文字／文字粒子、像素房間／像素風遊戲首頁、重力感應／物理引力、Hairline 等距線稿互動圖；或點名任一經典美學風格；或要先產出給 Claude Design 的視覺 brief 時。主動更新時機：新增風格時加 references/styles/NN-*.md 並更新索引表；實測撞到新陷阱時補進該風格檔或 references/pitfalls.md。
 argument-hint: [風格名或編號｜只要 brief｜新增風格]
 ---
 
@@ -15,6 +15,7 @@ argument-hint: [風格名或編號｜只要 brief｜新增風格]
 3. **一次只改一件事**：第一版求流程跑通；之後每輪只調一個維度，看完畫面再決定下一步。
 4. **可讀與舒適優先於炫**：主標要有 DOM 文字、尊重 reduced-motion、觸控可用、權限被拒有替代路徑。
 5. **開頁就有畫面**：用示範內容填滿第一眼，模擬內容一定標示。
+6. **先說出處再動手**：做任何畫面前先講參考哪一件經典（作者、作品、年份），借它的配色、構圖、字體氣質、動態節奏，不臨摹。說不出就先查 `references/aesthetics.md`，查不到再搜。AI 沒被告知什麼叫美，就會給平均值。
 
 ---
 
@@ -71,6 +72,9 @@ argument-hint: [風格名或編號｜只要 brief｜新增風格]
 | 08 | 動態文字（文字粒子） | 文字類 | 微型字聚成主標，被游標推散後回位 | 寫作者、品牌宣言、發表頁 | `references/styles/08-kinetic-type.md` |
 | 09 | 像素房間（像素公寓） | 敘事場景 | 點物件探索深夜像素公寓，解鎖秘密房間 | 作品集、創作者首頁、彩蛋履歷 | `references/styles/09-pixel-room.md` |
 | 10 | 重力感應（物理引力） | Canvas 動態場 | 游標是引力源，物件漂浮、墜落、碰撞 | 實驗室、數據品牌、倒數頁 | `references/styles/10-gravity.md` |
+| 11 | 等距線稿互動圖（Hairline） | 單一物件隱喻 | 一張等距細線物件，游標靠近時用貼合意義的手勢回應 | 技術服務 hero、功能說明圖、空狀態、logo 變動態 | `references/styles/11-hairline.md` |
+
+**美學風格庫**（`references/aesthetics.md`）：20 種有出處的視覺語言，分平面印刷、動態電影、3D 材質、介面遊戲四組。它不是配方，是「皮」：配方決定能玩什麼，風格庫決定長什麼樣、引用誰。可以疊用（配方 09 ＋ 像素風的陰影規則），也是探索模式挑方向的來源。使用者點名「做成包浩斯／Riso／合成波」時直接讀它。
 
 ---
 
@@ -93,7 +97,9 @@ argument-hint: [風格名或編號｜只要 brief｜新增風格]
 |---|---|---|
 | **web-style-recipes**（本 skill） | 選哪個實驗風格、這個風格長什麼樣、怎麼做出來、會踩哪些坑 | — |
 | **impeccable** | 設計品質評審、UX 打磨、無障礙與效能稽核 | 第一版做完後評一輪；使用者說「幫我 review／polish」 |
-| **frontend-design** | 一般 UI 的美學方向與排版選擇 | 需求不屬於 10 種風格、是一般官網或產品頁時 |
+| **frontend-design** | 一般 UI 的美學方向與排版選擇 | 需求不屬於 11 種配方、是一般官網或產品頁時 |
+| **hairline-create／hairline-adopt** | 等距線稿互動圖的實際繪製與自檢（`look.mjs`） | 配方 11 選定後，由它們畫圖；手上有 SVG／logo 用 adopt |
+| **design-taste-frontend** | 沒有定版品牌時的整頁美術指導（抽方向、找開放授權照片、瀏覽器自檢） | 使用者明確叫 taste-skill，或專案沒有設計系統又要整頁重做時 |
 | **design-system** | 設計 token、元件規格、品牌系統化 | 要把風格延伸成整站 token 或元件庫時 |
 
 專案若有自己的設計系統（例如 CLAUDE.md 指定色票與字型），**專案規範優先**：用本 skill 的互動與結構，配色字型改用專案的。
@@ -102,4 +108,5 @@ argument-hint: [風格名或編號｜只要 brief｜新增風格]
 
 ## 出處
 
-10 種風格的靈感來源：AI郵報〈10 種 Vibe Coding 網站設計靈感〉，Joanna Chang，2026-10-14，https://www.aiposthub.com/vibe-coding-website-ideas/ 。本 skill 的特徵清單、流程、陷阱與 prompt 均為改寫整理與自行撰寫，非原文轉載。
+10 種風格的靈感來源：AI郵報〈10 種 Vibe Coding 網站設計靈感〉，Joanna Chang，2026-10-14，https://www.aiposthub.com/vibe-coding-website-ideas/ 。
+配方 11 來源：Lucas Markes〈hairline〉，https://hairline.lucasmarkes.com/figures 。美學風格庫來源：styles-gift「20 種風格、20 個出處」，https://styles-gift.vercel.app/ （2026-10）。本 skill 的特徵清單、流程、陷阱與 prompt 均為改寫整理與自行撰寫，非原文轉載。
